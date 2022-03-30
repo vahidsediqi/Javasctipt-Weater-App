@@ -23,27 +23,16 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    position: relative;
 }
 
-.card > h1 {
+.card > h3 {
    margin: 15px auto 35px auto;
+   font-size: 40px;
+   font-weight: 300;
 }
-.desc {
-    text-transform: capitalize;
-}
-.search{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 40px;
-}
-.city {
-    margin-top: 35px;
-    margin-bottom: -15px;
-}
-.temp {
-    font-size: 45px;
-}
+
+
 .search > input {
     width: calc(100% - 4rem);
     height: 100%;
@@ -87,10 +76,33 @@ body{
 }
 
 .label{
-    margin-left: auto;
+    position: absolute;
+    font-size: 12px;
+    bottom: 15px;
+    right: 25px;
+    margin-top: 45px;
+
+}
+
+.wind {
+    margin-bottom: 45px;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+}
+.city {
     margin-top: 35px;
     margin-bottom: -15px;
-    font-size: 12px;
+}
+.temp {
+    font-size: 45px;
+}
+.desc {
+    text-transform: capitalize;
 }
 
 .label a {
