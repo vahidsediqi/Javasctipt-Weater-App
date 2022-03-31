@@ -19,10 +19,35 @@ let weather = {
         document.querySelector('.desc').innerText = description;
         document.querySelector('.humidity').innerText = 'Humidity ' + humidity + ' %';
         document.querySelector('.wind').innerHTML = 'Wind Speed ' + speed + ' km/h'
+
+        if(document.querySelector('.desc').innerText === 'Overcast Clouds'){
+            document.querySelector('body').style.backgroundImage = "url('./broken-clouds.jpg')"
+        } 
+        
+        if(document.querySelector('.desc').innerText === 'Broken Clouds'){
+            document.querySelector('body').style.backgroundImage = "url('./broken-clouds.jpg')"
+        } 
+        
+        else if (document.querySelector('.desc').innerText === 'Clear Sky') {
+            document.querySelector('body').style.backgroundImage = "url('./Clear-Sky.webp')"
+        }
+        else if (document.querySelector('.desc').innerText === 'Haze') {
+            document.querySelector('body').style.backgroundImage = "url('./haze.jpg')"
+        }
+
+        else if (document.querySelector('.desc').innerText === 'Light Rain') {
+            document.querySelector('body').style.backgroundImage = "url('./rain.jpg')"
+        }
+
+        else if (document.querySelector('.desc').innerText === 'Light Rain') {
+            document.querySelector('body').style.backgroundImage = "url('./rain.jpg')"
+        }
     },
 
     search: function(){
         this.fetchWeather(document.querySelector(".search-bar").value)
+        
+      
     }
 }
 

@@ -10,7 +10,9 @@ body{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: ease-in-out all 0.5s;
 }
+
 
 .card{
     background-color: #000000d0;
